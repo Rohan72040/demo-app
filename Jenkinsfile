@@ -7,12 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'PASTE_YOUR_GITHUB_REPOSITORY_URL_HERE'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'mvn clean compile'
